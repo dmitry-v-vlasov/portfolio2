@@ -93,7 +93,7 @@
 <hr>
 <p>
     EXIF Data:<br>
-<div id="exif-data"></div>
+    <div id="exif-data"></div>
 </p>
 
 <script>
@@ -129,10 +129,11 @@
         image.setAttribute('src', 'data:image/jpeg;base64,' + base64Data)
     }
 
-
+    // =================================================================
     const image_convert_form = document.getElementById('image-convert-form');
     image_convert_form.addEventListener('submit', (e) => {
         e.preventDefault();
+
         const formData = new FormData(image_convert_form);
         const fileImage = formData.get('image_file');
 
